@@ -94,9 +94,8 @@ def _get_key(key, scopes, warn=False):
     # We couldn't find the key in any of the scopes
 
     if warn:
-        warning = "Could not find key '%s'%s" % (key, linesep)
         if isinstance(warn, Callable):
-            warn(ChevronKeyError(warning))
+            warn(key)
         else:
             sys.stderr.write(warning)
 
