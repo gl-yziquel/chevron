@@ -19,9 +19,13 @@ setup(name='chevron',
       long_description=readme,
       long_description_content_type='text/markdown',
 
-      author='noah morrison',
-      author_email='noah@morrison.ph',
-      url='https://github.com/noahmorrison/chevron',
+      author='Noah Morrison, Guillaume Yziquel',
+      author_email='noah@morrison.ph, guillaume.yziquel@mailfence.com',
+      url='https://github.com/gl-yziquel/chevron',
+
+      project_urls={
+          'Original Source': 'https://github.com/noahmorrison/chevron'
+      },
 
       packages=['chevron'],
       entry_points={
