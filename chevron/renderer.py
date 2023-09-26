@@ -95,7 +95,7 @@ def _get_key(key, scopes, warn=False):
 
     if warn:
         if isinstance(warn, Callable):
-            warn(key)
+            return warn(key)
         else:
             sys.stderr.write(f"Key missing: {key}")
 
